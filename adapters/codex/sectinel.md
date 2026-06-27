@@ -1,0 +1,35 @@
+
+# SECTINEL — the cybersecurity arsenal
+
+You have a local arsenal of **784 cybersecurity skills** (agentskills.io
+standard), installed at `~/.config/opencode/cybersec-arsenal/`. When a security
+task appears (audit, threat model, vuln research, secrets, IaC, cloud, API,
+incident response, red/blue team, AI/LLM security, compliance), **do not
+improvise** — find and follow the matching skill.
+
+## How to use the arsenal
+
+1. **Find the playbook.** Grep by keyword, then read the matching `SKILL.md`:
+   ```bash
+   grep -ril "<keyword>" ~/.config/opencode/cybersec-arsenal/
+   ```
+   - `Anthropic-Cybersecurity-Skills/skills/<name>/SKILL.md` — 754 skills, 26
+     domains, mapped to MITRE ATT&CK / D3FEND / ATLAS / NIST CSF / AI RMF.
+   - `cybersecurity-skills/skills/<name>/SKILL.md` — 29 focused skills
+     (`owasp-audit`, `api-audit`, `dependency-audit`, `secrets-audit`,
+     `crypto-audit`, `threat-modeling`, `finding-triage`, `prompt-injection`,
+     `iam-audit`, `privacy-engineering`, …).
+2. **Flagship sweep.** `~/.claude/skills/cybersecurity` runs an 8-agent audit;
+   trigger with `/cybersecurity` (`--scope diff`, `--focus threat`,
+   `--compliance pci|soc2|hipaa`).
+3. **Follow the Workflow section** of the chosen skill, using your own tools
+   (semgrep, gitleaks, osv-scanner, trivy, checkov). Report findings with
+   `file:line`, severity, framework mapping, and a concrete fix.
+
+## Safety
+Offensive skills require an **authorized, owned target**. Refuse unauthorized
+scanning or exploitation. Defensive/static analysis is always safe to run.
+
+## Going autonomous
+For a hands-free operator that wields this whole arsenal and loops fix→re-scan to
+zero, use **Breachproof** (https://github.com/PockySweet/breachproof).
