@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Shellcheck
+        run: shellcheck install.sh uninstall.sh
+
+      - name: Validate Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: 'skills/**/*.md'
+
+      - name: Verify checksums
+        run: |
+          if [ -f checksums.sha256 ]; then
+            sha256sum -c checksums.sha256
+          fi
+
+      - name: Cross-reference check
+        run: |
+          grep -oP 'references/[a-z-/]+\.md' skills/cybersecurity/SKILL.md | sort -u | while read ref; do
+            if [ ! -f "skills/cybersecurity/$ref" ]; then
+              echo "ERROR: $ref referenced in SKILL.md but does not exist"
+              exit 1
+            fi
+          done
