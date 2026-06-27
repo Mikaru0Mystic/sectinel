@@ -14,7 +14,6 @@
 [![opencode](https://img.shields.io/badge/opencode-ready-7c3aed?style=flat-square)](https://opencode.ai)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-ready-d97757?style=flat-square)](https://claude.ai/code)
 [![MITRE ATT&CK · NIST · D3FEND](https://img.shields.io/badge/mapped-ATT%26CK·NIST·D3FEND·ATLAS-red?style=flat-square)](#five-frameworks-one-arsenal)
-[![Operator: Breachproof](https://img.shields.io/badge/operator-Breachproof-10b981?style=flat-square)](https://github.com/Mikaru0Mystic/breachproof)
 [![PRs: welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
 ### The open security arsenal for AI agents. 784 skills, MCP wiring, and scanner integrations in one installable suite.
@@ -23,18 +22,11 @@
 
 <br/>
 
-**🌐 English · [Español](README.es.md) · [中文](README.zh.md)**  ·  _more languages coming_
+**🌐 English · [Español](README.es.md) · [中文](README.zh.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt.md) · [日本語](README.ja.md)**
 
 </div>
 
 ---
-
-> **Sectinel is the armory. [Breachproof](https://github.com/Mikaru0Mystic/breachproof) is the operator.**
-> Sectinel hands any AI agent a working library of security know-how: hundreds of
-> step-by-step playbooks, mappings to every major framework, and the wiring to run
-> real scanners. Breachproof is the autonomous agent that picks those skills up
-> and drives a codebase to zero findings. Use the two together, or point
-> Sectinel's arsenal at whatever agent you already use.
 
 ## Why this exists
 
@@ -117,10 +109,6 @@ This installs the 784-skill arsenal to `~/.config/opencode/cybersec-arsenal/`,
 the flagship `cybersecurity` skill to `~/.claude/skills/`, and prints the
 security-MCP wiring snippet. Restart your agent runtime afterward.
 
-> Want it to run itself? Pair it with
-> **[Breachproof](https://github.com/Mikaru0Mystic/breachproof)**, the autonomous
-> operator that takes this arsenal and works a codebase down to zero findings.
-
 ## Integrated scanners & engines
 
 Sectinel's skills know how to drive real tools. These run at runtime rather than
@@ -136,6 +124,15 @@ being bundled, and each keeps its own license (see
 | **Semgrep MCP** | SAST over the Model Context Protocol | [`mcp/`](mcp/) config |
 
 See [`docs/integrations.md`](docs/integrations.md) and [`mcp/README.md`](mcp/README.md).
+
+## Pair with Breachproof (optional)
+
+Sectinel is the arsenal, and it stands on its own with any agentskills.io-compatible
+agent. If you want a hands-off operator to wield it,
+**[Breachproof](https://github.com/Mikaru0Mystic/breachproof)** is an autonomous agent
+built around this library: it picks up the skills, runs the scanners, and drives a
+codebase down to zero findings. Completely optional; Sectinel needs nothing else to be
+useful.
 
 ## Updating the arsenal
 

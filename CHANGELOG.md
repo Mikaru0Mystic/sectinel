@@ -6,7 +6,7 @@ This project follows [Semantic Versioning](https://semver.org) and
 ## [1.0.0] - 2026-05-31
 
 ### Added
-- Initial release of **Sectinel** — the open security arsenal for AI agents.
+- Initial release of **Sectinel**, the open security arsenal for AI agents.
 - **784 security skills** combined from three upstream libraries (vendored under
   their original Apache-2.0 / MIT licenses, with attribution): Anthropic-
   Cybersecurity-Skills (754), briiirussell/cybersecurity-skills (29), and

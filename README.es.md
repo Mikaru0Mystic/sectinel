@@ -12,18 +12,11 @@
 
 ### El arsenal de seguridad abierto para agentes de IA. 784 habilidades, integración con MCP e integraciones de escáneres en una sola suite instalable.
 
-**🌐 [English](README.md) · Español · [中文](README.zh.md)**  ·  _más idiomas en camino_
+**🌐 [English](README.md) · Español · [中文](README.zh.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt.md) · [日本語](README.ja.md)**
 
 </div>
 
 ---
-
-> **Sectinel es la armería. [Breachproof](https://github.com/Mikaru0Mystic/breachproof) es el operador.**
-> Sectinel le da a cualquier agente de IA una biblioteca funcional de conocimientos de
-> seguridad: cientos de guías paso a paso, asignaciones a todos los marcos principales y
-> la integración para ejecutar escáneres reales. Breachproof es el agente autónomo que
-> toma esas habilidades y lleva una base de código a cero hallazgos. Úsalos juntos, o
-> apunta el arsenal de Sectinel al agente que ya utilices.
 
 ## Por qué existe
 
@@ -107,10 +100,6 @@ Esto instala el arsenal de 784 habilidades en `~/.config/opencode/cybersec-arsen
 habilidad insignia `cybersecurity` en `~/.claude/skills/`, e imprime el fragmento de
 configuración del MCP de seguridad. Reinicia tu *runtime* de agente después.
 
-> ¿Quieres que se ejecute solo? Combínalo con
-> **[Breachproof](https://github.com/Mikaru0Mystic/breachproof)**, el operador autónomo
-> que toma este arsenal y trabaja una base de código hasta cero hallazgos.
-
 ## Escáneres y motores integrados
 
 Las habilidades de Sectinel saben cómo manejar herramientas reales. Estas se ejecutan en
@@ -126,6 +115,15 @@ tiempo de ejecución en lugar de incluirse, y cada una conserva su propia licenc
 | **Semgrep MCP** | SAST sobre el Model Context Protocol | configuración en [`mcp/`](mcp/) |
 
 Consulta [`docs/integrations.md`](docs/integrations.md) y [`mcp/README.md`](mcp/README.md).
+
+## Combinar con Breachproof (opcional)
+
+Sectinel es el arsenal y se sostiene por sí solo con cualquier agente compatible con
+agentskills.io. Si quieres un operador autónomo que lo maneje,
+**[Breachproof](https://github.com/Mikaru0Mystic/breachproof)** es un agente autónomo
+construido en torno a esta biblioteca: toma las habilidades, ejecuta los escáneres y lleva
+una base de código a cero hallazgos. Totalmente opcional; Sectinel no necesita nada más
+para ser útil.
 
 ## Actualizar el arsenal
 
