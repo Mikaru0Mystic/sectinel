@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Sectinel — the open security arsenal for AI agents">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0820"/>
+      <stop offset="0.55" stop-color="#171047"/>
+      <stop offset="1" stop-color="#070518"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="320" rx="20" fill="url(#bg)"/>
+  <circle cx="170" cy="160" r="250" fill="url(#glow)"/>
+  <g stroke="#241a5e" stroke-width="1" opacity="0.6">
+    <path d="M0 80 H1280 M0 160 H1280 M0 240 H1280"/>
+    <path d="M320 0 V320 M640 0 V320 M960 0 V320"/>
+  </g>
+
+  <!-- armory / sentinel mark: layered hex -->
+  <g transform="translate(98,70)" fill="none" stroke="url(#accent)" stroke-width="5" stroke-linejoin="round">
+    <path d="M74 6 L132 40 V108 L74 142 L16 108 V40 Z" fill="#0e0a2e"/>
+    <path d="M74 40 L106 58 V94 L74 112 L42 94 V58 Z" stroke-width="4"/>
+    <circle cx="74" cy="76" r="9" fill="url(#accent)" stroke="none"/>
+  </g>
+
+  <text x="290" y="150" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="98" font-weight="800" letter-spacing="3" fill="#eef2ff">SECTINEL</text>
+  <text x="294" y="200" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="30" font-weight="500" fill="#c4b5fd">The open security arsenal for AI agents.</text>
+
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="600">
+    <text x="294" y="262" fill="#9ca3af">784 SKILLS · 5 FRAMEWORKS · MCP + SCANNERS · ONE SUITE</text>
+  </g>
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="17" fill="#a5b4fc" opacity="0.9">
+    <text x="294" y="294">agentskills.io · Hermes Agent · opencode · Claude Code · Cursor · Cline · OpenClaw</text>
+  </g>
+
+  <rect x="1" y="1" width="1278" height="318" rx="20" fill="none" stroke="#7c3aed" stroke-opacity="0.3" stroke-width="2"/>
+</svg>
