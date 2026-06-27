@@ -1,0 +1,21 @@
+name: CI
+on:
+  push: { branches: [ main ] }
+  pull_request: {}
+permissions:
+  contents: read
+jobs:
+  validate-skills:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every SKILL.md has name + description frontmatter
+        run: |
+          fail=0
+          while IFS= read -r f; do
+            head -1 "$f" | grep -q '^---$' || { echo "::error file=$f::missing frontmatter"; fail=1; continue; }
+            grep -q '^name:' "$f"        || { echo "::error file=$f::missing name"; fail=1; }
+            grep -q '^description:' "$f" || { echo "::error file=$f::missing description"; fail=1; }
+          done < <(find arsenal skills -name SKILL.md)
+          echo "validated $(find arsenal skills -name SKILL.md | wc -l) skills"
+          exit $fail
