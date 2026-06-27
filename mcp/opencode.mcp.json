@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "semgrep": {
+      "type": "local",
+      "command": ["uvx", "semgrep-mcp"],
+      "enabled": true
+    }
+  }
+}
