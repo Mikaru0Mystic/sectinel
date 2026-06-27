@@ -14,18 +14,22 @@
 [![opencode](https://img.shields.io/badge/opencode-ready-7c3aed?style=flat-square)](https://opencode.ai)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-ready-d97757?style=flat-square)](https://claude.ai/code)
 [![MITRE ATT&CK · NIST · D3FEND](https://img.shields.io/badge/mapped-ATT%26CK·NIST·D3FEND·ATLAS-red?style=flat-square)](#five-frameworks-one-arsenal)
-[![Operator: Breachproof](https://img.shields.io/badge/operator-Breachproof-10b981?style=flat-square)](https://github.com/PockySweet/breachproof)
+[![Operator: Breachproof](https://img.shields.io/badge/operator-Breachproof-10b981?style=flat-square)](https://github.com/Mikaru0Mystic/breachproof)
 [![PRs: welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
 ### The open security arsenal for AI agents. 784 skills, MCP wiring, and scanner integrations in one installable suite.
 
 [What's inside](#whats-inside) · [Frameworks](#five-frameworks-one-arsenal) · [Compatibility](#compatibility) · [Install](#install) · [Integrations](#integrated-scanners--engines) · [Attributions](#credits--attributions)
 
+<br/>
+
+**🌐 English · [Español](README.es.md) · [中文](README.zh.md)**  ·  _more languages coming_
+
 </div>
 
 ---
 
-> **Sectinel is the armory. [Breachproof](https://github.com/PockySweet/breachproof) is the operator.**
+> **Sectinel is the armory. [Breachproof](https://github.com/Mikaru0Mystic/breachproof) is the operator.**
 > Sectinel hands any AI agent a working library of security know-how: hundreds of
 > step-by-step playbooks, mappings to every major framework, and the wiring to run
 > real scanners. Breachproof is the autonomous agent that picks those skills up
@@ -103,7 +107,7 @@ See [`adapters/README.md`](adapters/README.md) for per-platform install steps.
 
 ```bash
 # Clone, then install the arsenal (skills + flagship + scanner/MCP wiring)
-git clone https://github.com/PockySweet/sectinel.git
+git clone https://github.com/Mikaru0Mystic/sectinel.git
 cd sectinel
 bash scripts/install.sh        # macOS / Linux / WSL
 #  or, on Windows:  pwsh scripts/install.ps1
@@ -114,7 +118,7 @@ the flagship `cybersecurity` skill to `~/.claude/skills/`, and prints the
 security-MCP wiring snippet. Restart your agent runtime afterward.
 
 > Want it to run itself? Pair it with
-> **[Breachproof](https://github.com/PockySweet/breachproof)**, the autonomous
+> **[Breachproof](https://github.com/Mikaru0Mystic/breachproof)**, the autonomous
 > operator that takes this arsenal and works a codebase down to zero findings.
 
 ## Integrated scanners & engines
