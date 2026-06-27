@@ -1,0 +1,45 @@
+Sectinel
+Copyright 2026 The Sectinel Authors
+
+This product is licensed under the Apache License, Version 2.0 (the "License").
+See the LICENSE file. You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+
+Sectinel is a CURATION + INTEGRATION project. It bundles ("vendors") and
+integrates third-party software, each governed by its OWN license. The full
+list, with authors and links, is in ATTRIBUTIONS.md.
+
+------------------------------------------------------------------------------
+VENDORED — redistributed in this repository under arsenal/, each retaining its
+ORIGINAL license (the upstream LICENSE file is preserved inside each subfolder):
+------------------------------------------------------------------------------
+- arsenal/Anthropic-Cybersecurity-Skills/
+    Copyright (c) Mahipal Jangra (@mukul975). Apache License 2.0.
+    https://github.com/mukul975/Anthropic-Cybersecurity-Skills
+- arsenal/cybersecurity-skills/
+    Copyright (c) Bri Russell (@briiirussell). MIT License.
+    https://github.com/briiirussell/cybersecurity-skills
+- arsenal/claude-cybersecurity/   (also installed as skills/cybersecurity)
+    Copyright (c) @AgriciDaniel. MIT License.
+    https://github.com/AgriciDaniel/claude-cybersecurity
+
+------------------------------------------------------------------------------
+INTEGRATED — invoked at runtime, NOT redistributed or relicensed:
+------------------------------------------------------------------------------
+- ship-safe (MIT) — https://github.com/asamassekou10/ship-safe
+- Shannon / Shannon Lite (GNU AGPL v3.0) — https://github.com/KeygraphHQ/shannon
+- PentAGI (Apache-2.0 / EULA) — https://github.com/vxcontrol/pentagi
+- Semgrep, OSV-Scanner, Trivy, Gitleaks, Trufflehog, Checkov, hadolint — each
+  under its own license.
+
+------------------------------------------------------------------------------
+STANDARDS / FRAMEWORKS referenced by the skills:
+------------------------------------------------------------------------------
+agentskills.io; MITRE ATT&CK, D3FEND, ATLAS; NIST CSF 2.0, NIST AI RMF.
+
+"Anthropic" and "Claude" are trademarks of Anthropic PBC. All other product
+names and trademarks are the property of their respective owners. Sectinel is an
+independent project and is NOT affiliated with, sponsored by, or endorsed by any
+of the listed projects or trademark holders.
+
+This software is intended for authorized, defensive security use only.
